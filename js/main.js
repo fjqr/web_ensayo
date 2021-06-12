@@ -1,8 +1,6 @@
 const navEffect = () => {
   let nav = document.querySelector(".nav");
-  let title = document.querySelector(".title");
-  let anchors = document.querySelector(".nav ul");
-
+  
   addEventListener("scroll", () => {
     nav.classList.add("nav-fixed");
     if (scrollY === 0) {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Prompt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Prompt&display=swap");
 :root {
   --orange: #d1522bef;
   --gray: #868192;
@@ -31,35 +31,35 @@
   align-items: center;
   background-color: var(--violet);
   position: relative;
-  transition-timing-function:ease-in-out;
-  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
   z-index: 1000;
 }
-.logo{
+.logo {
   display: flex;
 }
-.nav img{
+.nav img {
   height: 4rem;
   width: 4rem;
   background-color: transparent;
   margin: 0 1rem 0 0;
-position: relative;
+  position: relative;
 }
 .nav-fixed {
-  padding-top: 1.2rem;  
+  padding-top: 1.2rem;
   position: fixed;
   left: 0;
   right: 0;
   background-color: rgba(44, 36, 65, 0);
   color: var(--dark);
   transition-timing-function: ease-in-out;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
 }
 .title {
   color: var(--light);
   font-size: 3.6rem;
-  font-family: 'Londrina Solid',cursive;
-  text-shadow: .1rem .1rem .1rem var(--violet);
+  font-family: "Londrina Solid", cursive;
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--violet);
 }
 
 a {
@@ -67,28 +67,29 @@ a {
   color: var(--orange);
   margin: 0.5rem;
 }
-a:hover{
-color: var(--gray);
-transition-timing-function: ease-in-out;
-transition-duration: .2s;
+a:hover {
+  color: var(--gray);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
 }
 
 .nav li {
   display: inline-block;
   font-size: 1.2rem;
   list-style: none;
-  text-shadow: .1rem .1rem .1rem var(--violet);
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--violet);
 }
- li:hover{
-  transform: scale(1.1);
+li:hover {
+  transform: scale(1.1,1.1);
   transition-timing-function: ease-in-out;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
 }
 /*galería*/
 
-.promo-frase{
-background-color: rgba(134, 129, 146, .4);
-padding:2rem
+.promo-frase {
+  background-color: rgba(134, 129, 146, 0.4);
+  padding: 2rem;
+  z-index: 2;
 }
 
 #promos {
@@ -96,30 +97,31 @@ padding:2rem
 }
 
 #promos h1 {
-  top:25rem;
+  top: 25rem;
   right: 4rem;
   position: absolute;
   font-size: 3.5rem;
-  text-shadow: .1rem .1rem .1rem var(--light);
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--light);
 }
-.galeria{
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
+.galeria {
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+  height: 100%;
+  position: relative;
 }
 
 /*Estilos de las frases*/
 
 ion-icon {
-  color:var(--orange);
+  color: var(--orange);
   left: 10.3rem;
-  position:relative;
+  position: relative;
   height: 4rem;
-  width:4rem;
-
+  width: 4rem;
 }
 .frases-container {
   grid-row: 8/12;
@@ -131,7 +133,6 @@ ion-icon {
   padding: 2rem;
   height: 25rem;
   width: 30%;
-
 }
 .frases-texto {
   text-align: center;
@@ -170,11 +171,11 @@ img {
 
 #info-text1 {
   text-align: justify;
-   margin-left: 2rem;
+  margin-left: 2rem;
 }
 #info-text2 {
   text-align: justify;
-   margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .info-titulo {
@@ -185,7 +186,7 @@ img {
 li {
   font-size: 1.2rem;
   list-style: none;
-  text-shadow: .1rem .1rem .1rem var(--violet);
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--violet);
 }
 
 footer {
@@ -201,9 +202,7 @@ footer {
   align-self: center;
 }
 
-#redes{
+#redes {
   margin: 2rem;
 }
-
-
 
