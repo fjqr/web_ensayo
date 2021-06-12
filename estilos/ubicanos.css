@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Prompt&display=swap');
+:root {
+  --orange: #d1522bef;
+  --gray: #868192;
+  --violet: #2c2441;
+  --dark: #121114;
+  --light: #eceaee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(10, minmax(5.2rem, 7.2rem));
+  font-family: prompt, sans-serif;
+  font-size: 1.3rem;
+  color: var(--dark);
+}
+
+/*Estilos del menú de navegación*/
+
+.nav {
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--violet);
+  position: relative;
+  transition-timing-function:ease-in-out;
+  transition-duration: .4s;
+  z-index: 1000;
+}
+.logo{
+  display: flex;
+}
+.nav img{
+  height: 4rem;
+  width: 4rem;
+  background-color: transparent;
+  margin: 0 1rem 0 0;
+position: relative;
+}
+.nav-fixed {
+  padding-top: 1.2rem;  
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: rgba(44, 36, 65, 0);
+  color: var(--dark);
+  transition-timing-function: ease-in-out;
+  transition-duration: .4s;
+}
+.title {
+  color: var(--light);
+  font-size: 3.6rem;
+  font-family: 'Londrina Solid',cursive;
+  text-shadow: .1rem .1rem .1rem var(--violet);
+}
+
+a {
+  text-decoration: none;
+  color: var(--orange);
+  margin: 0.5rem;
+}
+a:hover{
+color: var(--gray);
+transition-timing-function: ease-in-out;
+transition-duration: .2s;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 1.2rem;
+  list-style: none;
+  text-shadow: .1rem .1rem .1rem var(--violet);
+}
+ li:hover{
+  transform: scale(1.1);
+  transition-timing-function: ease-in-out;
+  transition-duration: .2s;
+}
+/*Estilo contenido*/
+.gps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 20rem;
+}
+li {
+  font-size: 1.2rem;
+  list-style: none;
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--violet);
+}
+.gps img {
+  position: relative;
+  height: 30rem;
+}
+li {
+    font-size: 1.2rem;
+    list-style: none;
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--violet);
+  }
+  /*Estilo Footer*/
+  footer {
+    grid-row: 19/21;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  
+  .date {
+    color: var(--light);
+    align-self: center;
+  }
+  
+  #redes {
+    margin: 2rem;
+  }
+  
